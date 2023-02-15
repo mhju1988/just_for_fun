@@ -1,0 +1,54 @@
+
+
+
+<input type="text" id="myInput" name="myInput">
+<ul id="suggestions"></ul>
+
+<div ><br>
+
+
+  <label >Here is the Servers Component!</label>
+   <br><br>
+<label style="margin-left: 10px;">Server name</label>
+  <br>
+
+  <input type="text"
+         class=""
+  (input) ="onUpdateServerName($event)">
+  {{serverName}}
+  {{serverAlreadyExist(serverName)}}
+
+  <br>
+
+  <button
+          [disabled]="!allowNewServer"
+          (click)="onCreateServer()">Add Server</button>
+  <button (click)="deleteAllServer()" >Delete all servers</button>
+  <button (click)="deleteServerByName()" >delete server by name</button>
+
+
+
+  <br>
+
+  <label style="margin-left: 10px" [ngStyle]="{'color':   ! wrongRighte   ? 'red' : 'green'}">{{serverCreationStatus}}</label>
+<!--  <label>{{serverCreationStatus}}</label>-->
+
+  <br><br>
+  <app-server></app-server>
+  <app-server></app-server>
+<!--  {{servers.toString()}}-->
+  <br>
+  there are <label style="color: indianred">{{servers.length}} </label> Servers
+  <br>
+  <ul>
+    <li *ngFor="let item of servers">{{ item }}</li>
+  </ul>
+
+
+
+
+</div>
+
+
+
+

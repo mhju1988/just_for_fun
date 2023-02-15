@@ -1,0 +1,51 @@
+h3{
+  color: darkblue;
+}
+/*.float-parent-element {*/
+/*  width: 50%;*/
+/*}*/
+/*.float-child-element {*/
+/*  float: left;*/
+/*  width: 50%;*/
+/*}*/
+/*.red {*/
+/*  background-color: red;*/
+/*  margin-left: 50%;*/
+/*  height: 100px;*/
+/*}*/
+/*.yellow {*/
+/*  margin-left: 50%;*/
+/*  height: 100px;*/
+/*  background-color: yellow;*/
+/*}*/
+
+/*.parent {*/
+
+/*  border: 1px solid black;*/
+/*  margin: 1rem;*/
+/*  padding: 2rem 2rem;*/
+/*  text-align: center;*/
+/*}*/
+/*.child {*/
+/*  display: flex;*/
+/*  border: 1px solid red;*/
+/*  padding: 1rem 1rem;*/
+/*  vertical-align: middle;*/
+/*}*/
+.side-by-side {
+  width: 49%;
+  height: 100px;
+  float: left;
+}
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+@media (max-width: 767px) {
+  div {
+    width: 90%;
+    height: 60%;
+  }
+}

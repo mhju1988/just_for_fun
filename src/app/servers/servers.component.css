@@ -1,0 +1,47 @@
+div{
+  /*padding: 20px;*/
+  /*position: center;*/
+  /*width: 400px;*/
+  border: 10px red;
+  /*border-radius: 40px;*/
+  background-color: lightblue;
+}
+
+input{
+  margin: 10px;
+  background: antiquewhite;
+  border-radius: 11px;
+}
+button{
+  margin: 10px;
+  border-radius: 20px
+}
+ button:hover{
+  background: dodgerblue;
+  color: #c1e1e0;
+ }
+/*.myDeleteButton{*/
+
+/*  margin: 10px;*/
+/*  border-radius: 20px*/
+
+/*}*/
+/*.myDeleteButton:hover{*/
+/*  background: red;*/
+/*  color: black;*/
+
+/*}*/
+/*.side-by-side {*/
+/*  width: 49%;*/
+/*  height: 100px;*/
+/*  float: left;*/
+/*}*/
+
+
+/*@media only screen and (max-width: 600px) {*/
+/*  .side-by-side {*/
+/*    width: 100%;*/
+/*    float: none;*/
+/*  }*/
+/*}*/
+
